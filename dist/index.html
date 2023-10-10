@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B&G</title>
+  <!-- Style -->
+  <link rel="stylesheet" href="/index.2e8c441c.css">
+</head>
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <div class="header-nav hero-background">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">B&G</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">How we met</a>
+              <a class="nav-link" href="#">Program</a>
+              <a class="nav-link" href="#">Venue</a>
+              <a class="nav-link" href="#">RSVP</a>
+              <a class="nav-link pull-right" href="#">ENG</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <!-- Navbar -->
+
+    <!-- Background image -->
+    <div class="px-4 py-5 my-5 text-center text-white">
+      <h1 class="display-5 fw-bold">We're getting married!</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">2024.08.16</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary button</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- Background image -->
+  </header>
+  <!-- Back to top button -->
+  <button type="button" class="btn btn-lg btn-floating btn btn-dark" id="btn-back-to-top">
+    <i class="fa-solid fa-arrow-up fa-bounce"></i>
+  </button>
+  <section id="how-we-met" class="margin-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h3 class="header">How we met</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in faucibus neque. Phasellus sit amet sem
+            purus. Curabitur molestie id felis quis tincidunt. Proin sed dui malesuada, luctus nisi ac, ullamcorper mi.
+            Pellentesque eu aliquam arcu, sit amet volutpat mi. Morbi pretium nunc bibendum, finibus risus eget,
+            eleifend neque. Etiam eget mollis erat. Suspendisse potenti. Quisque bibendum, lacus ac iaculis interdum,
+            justo nisl semper diam, non ornare ex diam in lectus. Curabitur dapibus mauris eget nibh accumsan, et
+            ultricies lectus consectetur. In fermentum posuere diam, ut tincidunt odio lobortis eget. And the rest is
+            history :)
+          </p>
+        </div>
+      </div>
+    </div>
+    </section>
+  <section id="program" class="margin-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3 class="header">Program</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <li>amet</li>
+        <li>amet</li>
+        <li>amet</li>
+        <li>amet</li>
+      </div>
+      <div class="col-md-6 text-center">
+        <li>amet</li>
+        <li>amet</li>
+        <li>amet</li>
+        <li>amet</li>
+      </div>
+    </div>
+
+  </div></section>
+
+    <section id="video-bg" class="hidden-sm hidden-xs margin-top">
+      <div id="bgndVideo" class="player" data-property="{videoURL:'https://www.youtube.com/watch?v=YffxXfO8vDE',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:40, stopAt:240, opacity:1}">
+      </div>
+      <div id="video-content">
+        <h5>Neszmély</h5>
+      </div>
+    </section>
+    <section id="map" class="margin-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3 class="header">Venue</h3>
+          </div>
+        </div>
+      </div>
+      <div id="leaflet-map">
+      </div>
+    </section>
+
+    <section class="rsvp text-center margin-top" id="rsvp">
+      <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+              </button>
+              <div class="section-padding">
+                <h3>Thank you!</h3>
+                <p>We are glad to see you join us on our big day.</p>
+                <div id="add-to-cal"></div>
+              </div>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+            <h3>What are you waiting for?</h3>
+            <p>We would greatly appreciate if you could RSVP before 1st of August 2024</p>
+            <form id="rsvp-form" class="rsvp-form" action="" method="POST">
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-input-group">
+                    <i class="fa fa-envelope"></i><input type="email" name="email" class="" placeholder="Your email" required="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-input-group">
+                    <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required="">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-input-group">
+                    <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="4" placeholder="Husband/Wife or kids" required="">
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-input-group">
+                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0" placeholder="Invite code" required="">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12" id="alert-wrapper"></div>
+              </div>
+              <button class="btn-fill btn btn-dark rsvp-btn">
+                Yes,
+                that's me!
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+<hr>
+    <footer class="bg-dark text-center text-white">
+    
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: #0003">
+        <p>nyul <span class="fa-solid fa-heart fa-beat-fade"></span> nyul</p>
+        <a class="text-white" href="https://doublegportfolio.000webhostapp.com/">2G</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- JavaScript -->
+    <script src="/index.59a40e7a.js" defer=""></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/index.04d3fcf9.js" defer=""></script>
+
+</body>
+
+</html>
