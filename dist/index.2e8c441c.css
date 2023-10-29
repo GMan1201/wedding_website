@@ -21917,16 +21917,36 @@ textarea.form-control-lg {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-color: #0000;
-  background-image: linear-gradient(0deg, #000000b3, #4d4d4db3), url("holder2.03266172.webp");
-  background-position: 0 0, center;
-  background-repeat: repeat, repeat;
-  background-size: cover;
-  background-attachment: scroll, scroll;
-  background-origin: padding-box, padding-box;
-  background-clip: border-box, border-box;
+  background: url("bng_header.752c03d5.png") 15% 55% / cover;
   min-height: 750px;
   position: relative;
+}
+
+.countdown h2, .countdown .h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.countdown ul {
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+  display: inline-flex;
+}
+
+.countdown li {
+  color: #e8ca6f;
+  background: #00000080;
+  border-radius: 10px;
+  flex-direction: column;
+  margin: 0 .5rem;
+  padding: 1rem;
+  display: flex;
+  box-shadow: 0 0 5px #00000080;
+}
+
+.countdown span {
+  font-size: 2rem;
 }
 
 #btn-back-to-top {
@@ -21982,6 +22002,10 @@ textarea.form-control-lg {
   filter: grayscale();
 }
 
+.section-padding {
+  padding: 40px 0;
+}
+
 .rsvp {
   padding-bottom: 140px;
 }
@@ -22019,7 +22043,7 @@ textarea.form-control-lg {
   transform: translateY(-50%);
 }
 
-.rsvp .rsvp-form .form-input-group i.fa-user, .rsvp .rsvp-form .form-input-group i.fa-users, .rsvp .rsvp-form .form-input-group i.fa-envelope, .rsvp .rsvp-form .form-input-group .fa-key {
+.rsvp .rsvp-form .form-input-group i.fa-user, .rsvp .rsvp-form .form-input-group i.fa-users, .rsvp .rsvp-form .form-input-group i.fa-envelope, .rsvp .rsvp-form .form-input-group .fa-key, .rsvp .rsvp-form .form-select-group .fa-hotel, .rsvp .rsvp-form .form-input-group .fa-comment {
   margin-left: 20px;
   font-size: 14px;
   position: absolute;

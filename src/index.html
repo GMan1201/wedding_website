@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hu">
+<html lang="eng">
 
 <head>
   <meta charset="UTF-8">
@@ -21,15 +21,18 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="#">How we met</a>
-              <a class="nav-link" href="#">Program</a>
-              <a class="nav-link" href="#">Venue</a>
-              <a class="nav-link" href="#">RSVP</a>
-              <a class="nav-link pull-right" href="#">ENG</a>
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">How we met</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Program</a></li>
+                <li class="nav-item"></li><a class="nav-link" href="#">Venue</a></li>
+              </ul>
+              <div class="d-flex">
+                <button class="btn btn-outline-warning me-2" href="#" type="submit">HUN</button>
+                <button class="btn btn-outline-warning" href="#" type="submit">RSVP</button>
+              </div>
+            
             </div>
           </div>
-        </div>
       </nav>
     <!-- Navbar -->
 
@@ -37,10 +40,9 @@
     <div class="px-4 py-5 my-5 text-center text-white">
       <h1 class="display-5 fw-bold">We're getting married!</h1>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">2024.08.16</p>
-        <div>
-          <h1>The big day</h1>
-          <p>Nicole & Chris wedding</p>
+        <div class="countdown text-center">
+          <h2>The big day - 2024.08.16</h2>
+          <p>Beáta & Gergő wedding</p>
           <p id="done"></p>
           <ul>
             <li><span id="days">0</span> Days</li>
@@ -49,8 +51,11 @@
             <li><span id="seconds">0</span> Seconds</li>
           </ul>
         </div>
-        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-          <button type="button" class="btn btn-primary btn-lg px-4 gap-3">RSVP</button>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center margin-top">
+          <button type="button" class="btn btn-warning btn-lg px-4 gap-3">RSVP</button>
+        </div>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center margin-top">
+            <i class="fa-solid fa-chevron-down fa-fade"></i>
         </div>
       </div>
     </div>
@@ -83,29 +88,41 @@
       </div>
     </div>
     </section>
-  <section id="program" class="margin-top">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h3 class="header">Program</h3>
+    <section class="program section-padding" id="program">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <h3 class="header">Program</h3>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                  <div class="wp1">
+                      <p><strong>Venue</strong></p>
+  
+                      <h5>Arriving <span class="time">4PM - 5PM</span></h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id elit sodales, dignissim nibh eget, luctus ipsum. Sed et est elementum, cursus diam vel, vulputate nibh. Mauris et mi ut erat laoreet tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis finibus est. Vestibulum sit amet tellus tortor. Fusce tincidunt tellus in interdum hendrerit. Integer consequat nisl sed cursus iaculis. Sed rutrum id tortor sed vehicula. Integer tristique consectetur ligula, id iaculis lorem pharetra nec. Duis sodales erat vel feugiat pretium. Aenean non purus in massa lobortis sagittis. Cras tristique ex nisl, vitae porta quam congue eu.</p>
+                  </div>
+                  <div class="wp2">
+                      <h5>Wedding ceremony <span class="time">5PM - 6PM</span></h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id elit sodales, dignissim nibh eget, luctus ipsum. Sed et est elementum, cursus diam vel, vulputate nibh. Mauris et mi ut erat laoreet tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis finibus est. Vestibulum sit amet tellus tortor. Fusce tincidunt tellus in interdum hendrerit. Integer consequat nisl sed cursus iaculis. Sed rutrum id tortor sed vehicula. Integer tristique consectetur ligula, id iaculis lorem pharetra nec. Duis sodales erat vel feugiat pretium. Aenean non purus in massa lobortis sagittis. Cras tristique ex nisl, vitae porta quam congue eu.</p>
+                  </div>
+              </div>
+              <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                  <div class="wp3">
+                      <p><strong>Menu</strong></p>
+  
+                      <h5>Dinner <span class="time">7PM-8PM</span></h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id elit sodales, dignissim nibh eget, luctus ipsum. Sed et est elementum, cursus diam vel, vulputate nibh. Mauris et mi ut erat laoreet tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis finibus est. Vestibulum sit amet tellus tortor. Fusce tincidunt tellus in interdum hendrerit. Integer consequat nisl sed cursus iaculis. Sed rutrum id tortor sed vehicula. Integer tristique consectetur ligula, id iaculis lorem pharetra nec. Duis sodales erat vel feugiat pretium. Aenean non purus in massa lobortis sagittis. Cras tristique ex nisl, vitae porta quam congue eu.</p>
+                  </div>
+                  <div class="wp4">
+                      <h5>Midnight dinner <span class="time">12AM</span></h5>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id elit sodales, dignissim nibh eget, luctus ipsum. Sed et est elementum, cursus diam vel, vulputate nibh. Mauris et mi ut erat laoreet tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis finibus est. Vestibulum sit amet tellus tortor. Fusce tincidunt tellus in interdum hendrerit. Integer consequat nisl sed cursus iaculis. Sed rutrum id tortor sed vehicula. Integer tristique consectetur ligula, id iaculis lorem pharetra nec. Duis sodales erat vel feugiat pretium. Aenean non purus in massa lobortis sagittis. Cras tristique ex nisl, vitae porta quam congue eu.</p>
+                  </div>
+              </div>
+          </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6 text-center">
-        <li>amet</li>
-        <li>amet</li>
-        <li>amet</li>
-        <li>amet</li>
-      </div>
-      <div class="col-md-6 text-center">
-        <li>amet</li>
-        <li>amet</li>
-        <li>amet</li>
-        <li>amet</li>
-      </div>
-    </div>
-
-  </section>
+    </section>
 
     <section id="video-bg" class="hidden-sm hidden-xs margin-top">
       <div id="bgndVideo" class="player"
@@ -115,7 +132,8 @@
         <h5>Neszmély</h5>
       </div>
     </section>
-    <section id="map" class="margin-top">
+
+    <section id="map" class="margin-top section-padding">
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
@@ -127,7 +145,7 @@
       </div>
     </section>
 
-    <section class="rsvp text-center margin-top" id="rsvp">
+    <section class="rsvp margin-top section-padding" id="rsvp">
       <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -174,6 +192,20 @@
                   <div class="form-input-group">
                     <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0"
                       placeholder="Invite code" required>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-input-group">
+                    <i class="fa-solid fa-hotel"></i>
+                    <input type="number" name="hotel" class="" placeholder="Hotel" required>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6">
+                  <div class="form-input-group">
+                    <i class="fa-regular fa-comment"></i><input type="text" name="notes" id="notes" class=""
+                      placeholder="Notes">
                   </div>
                 </div>
               </div>

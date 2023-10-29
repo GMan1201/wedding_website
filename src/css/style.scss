@@ -11,7 +11,9 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   --bs-bg-opacity:0.9;
 }
 .hero-background {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(77, 77, 77, 0.7)), url(../img/holder2.webp) center center;
+  /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(77, 77, 77, 0.7)), url(../img/bng_header.png) center center;*/
+  background:url(../img/bng_header.png);
+  background-position: 15% 55%;
   min-height: 750px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -19,14 +21,44 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   background-size: cover;
   position: relative;
 }
+.countdown h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+.countdown ul {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+}
+ .countdown li {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+    color: #e8ca6f;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+ }
+.countdown span {
+    font-size: 2rem;
+}
 
+.rsvp .rsvp-form .rsvp-btn {
+  padding: 15px 0;
+  border-radius: 3px;
+  width: 100%;
+  font-size: 13px;
+}
 
 #btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  z-index: 9999;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 9999;
 }
 
 #video-bg {
@@ -77,8 +109,12 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   filter: grayscale(100%);
 }
 
+.section-padding {
+  padding: 40px 0;
+}
 .rsvp {
   padding-bottom: 140px;
+  
 }
 .rsvp .rsvp-form .rsvp-btn {
   padding: 15px 0;
@@ -111,7 +147,7 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   left: 30px;
   transform: translateY(-50%);
 }
-.rsvp .rsvp-form .form-input-group i.fa-user, .rsvp .rsvp-form .form-input-group i.fa-users, .rsvp .rsvp-form .form-input-group i.fa-envelope, .rsvp .rsvp-form .form-input-group .fa-key {
+.rsvp .rsvp-form .form-input-group i.fa-user, .rsvp .rsvp-form .form-input-group i.fa-users, .rsvp .rsvp-form .form-input-group i.fa-envelope, .rsvp .rsvp-form .form-input-group .fa-key, .rsvp .rsvp-form .form-select-group .fa-hotel, .rsvp .rsvp-form .form-input-group .fa-comment {
   font-size: 14px;
   position: absolute;
   top: 50%;
