@@ -7,8 +7,15 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 @import "~@fortawesome/fontawesome-free/scss/solid.scss";
 @import "~@fortawesome/fontawesome-free/scss/v4-shims.scss";
 @import "../../node_modules/leaflet/dist/leaflet.css";
+/*https://www.npmjs.com/package/@fontsource/lora*/
+@import "../../node_modules/@fontsource/lora/index.css"; // Defaults to weight 400
+
+
 :root {
   --bs-bg-opacity:0.9;
+}
+body {
+  font-family: "Lora";
 }
 .hero-background {
   /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(77, 77, 77, 0.7)), url(../img/bng_header.png) center center;*/
@@ -53,6 +60,10 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   font-size: 13px;
 }
 
+.time{
+  font-size: 0.65em;
+  color: #6e6e6e;
+}
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
@@ -86,7 +97,11 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 }
 
 .margin-top {
-  margin-top: 50px;
+  margin-top: 75px;
+}
+
+.margin-bottom {
+  margin-top: 75px;
 }
 
 #leaflet-map {
@@ -147,7 +162,7 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
   left: 30px;
   transform: translateY(-50%);
 }
-.rsvp .rsvp-form .form-input-group i.fa-user, .rsvp .rsvp-form .form-input-group i.fa-users, .rsvp .rsvp-form .form-input-group i.fa-envelope, .rsvp .rsvp-form .form-input-group .fa-key, .rsvp .rsvp-form .form-select-group .fa-hotel, .rsvp .rsvp-form .form-input-group .fa-comment {
+.rsvp .rsvp-form .form-input-group i.fa-user, .rsvp .rsvp-form .form-input-group i.fa-users, .rsvp .rsvp-form .form-input-group i.fa-envelope, .rsvp .rsvp-form .form-input-group .fa-key, .rsvp .rsvp-form .form-input-group .fa-hotel, .rsvp .rsvp-form .form-input-group .fa-comment {
   font-size: 14px;
   position: absolute;
   top: 50%;

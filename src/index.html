@@ -22,13 +22,13 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">How we met</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Program</a></li>
-                <li class="nav-item"></li><a class="nav-link" href="#">Venue</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#how-we-met">How we met</a></li>
+                <li class="nav-item"><a class="nav-link" href="#program">Program</a></li>
+                <li class="nav-item"></li><a class="nav-link" href="#map">Venue</a></li>
               </ul>
               <div class="d-flex">
-                <button class="btn btn-outline-warning me-2" href="#" type="submit">HUN</button>
-                <button class="btn btn-outline-warning" href="#" type="submit">RSVP</button>
+                <a class="btn btn-outline-secondary me-2" href="#" role="button"><i class="fa-solid fa-language"> </i> HUN</a>
+                <a class="btn btn-outline-warning" href="#rsvp" role="button">RSVP</a>
               </div>
             
             </div>
@@ -40,7 +40,7 @@
     <div class="px-4 py-5 my-5 text-center text-white">
       <h1 class="display-5 fw-bold">We're getting married!</h1>
       <div class="col-lg-6 mx-auto">
-        <div class="countdown text-center">
+        <div class="countdown text-center margin-top">
           <h2>The big day - 2024.08.16</h2>
           <p>Beáta & Gergő wedding</p>
           <p id="done"></p>
@@ -52,9 +52,10 @@
           </ul>
         </div>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center margin-top">
-          <button type="button" class="btn btn-warning btn-lg px-4 gap-3">RSVP</button>
+          <a class="btn btn-warning btn-lg px-4 gap-3" role="button" href="#rsvp">RSVP</button>
         </div>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center margin-top">
+          <p>árvíztűrő tükörfúrógép</p>
             <i class="fa-solid fa-chevron-down fa-fade"></i>
         </div>
       </div>
@@ -63,7 +64,7 @@
     <!-- Background image -->
   </header>
   <!-- Back to top button -->
-  <button type="button" class="btn btn-lg btn-floating btn btn-dark" id="btn-back-to-top">
+  <button type="button" class="btn btn-lg btn-floating btn btn-outline-secondary" id="btn-back-to-top">
     <i class="fa-solid fa-arrow-up fa-bounce"></i>
   </button>
   <section id="how-we-met" class="margin-top">
@@ -88,14 +89,14 @@
       </div>
     </div>
     </section>
-    <section class="program section-padding" id="program">
+    <section class="program section-padding margin-top" id="program">
       <div class="container">
           <div class="row">
               <div class="col-md-12">
                   <h3 class="header">Program</h3>
               </div>
           </div>
-          <div class="row">
+          <div class="row margin-top">
               <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                   <div class="wp1">
                       <p><strong>Venue</strong></p>
@@ -145,7 +146,7 @@
       </div>
     </section>
 
-    <section class="rsvp margin-top section-padding" id="rsvp">
+    <section class="rsvp margin-top  margin-top" id="rsvp">
       <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -164,7 +165,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
+          <div class="col-md-6 offset-md-3">
             <h3>What are you waiting for?</h3>
             <p>We would greatly appreciate if you could RSVP before 1st of August 2024</p>
             <form id="rsvp-form" class="rsvp-form" action="" method="POST">
@@ -199,7 +200,12 @@
                 <div class="col-md-6 col-sm-6">
                   <div class="form-input-group">
                     <i class="fa-solid fa-hotel"></i>
-                    <input type="number" name="hotel" class="" placeholder="Hotel" required>
+                    <datalist id="hotel">
+                      <option value="No">
+                      <option value="Yes">
+                   </datalist>
+                    <!--input type="number" name="hotel" class="" placeholder="Hotel" required-->
+                    <input type="search" name="hotel" id="hotel" list="hotel" placeholder="Accomodation required?">
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
@@ -221,12 +227,12 @@
         </div>
       </div>
     </section>
-<hr>
+    <hr>
     <footer class="bg-dark text-center text-white">
     
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        <p>nyul <span class="fa-solid fa-heart fa-beat-fade"></span> nyul</p>
+        <p> <span class="fa-solid fa-heart fa-beat-fade"></span> </p>
         <a class="text-white" href="https://doublegportfolio.000webhostapp.com/">2G</a>
       </div>
       <!-- Copyright -->

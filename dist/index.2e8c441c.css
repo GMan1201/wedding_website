@@ -651,6 +651,51 @@ svg.leaflet-zoom-animated {
   }
 }
 
+@font-face {
+  font-family: Lora;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("lora-cyrillic-ext-400-normal.56039d57.woff2") format("woff2"), url("lora-cyrillic-ext-400-normal.e3996b3c.woff") format("woff");
+  unicode-range: U+460-52F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+@font-face {
+  font-family: Lora;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("lora-cyrillic-400-normal.cf25918f.woff2") format("woff2"), url("lora-cyrillic-400-normal.271b909b.woff") format("woff");
+  unicode-range: U+301, U+400-45F, U+490-491, U+4B0-4B1, U+2116;
+}
+
+@font-face {
+  font-family: Lora;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("lora-vietnamese-400-normal.fae4485a.woff2") format("woff2"), url("lora-vietnamese-400-normal.c0f84d1a.woff") format("woff");
+  unicode-range: U+102-103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+303-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB;
+}
+
+@font-face {
+  font-family: Lora;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("lora-latin-ext-400-normal.15e67a1c.woff2") format("woff2"), url("lora-latin-ext-400-normal.a53fcabc.woff") format("woff");
+  unicode-range: U+100-2AF, U+304, U+308, U+329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: Lora;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("lora-latin-400-normal.7e427bd3.woff2") format("woff2"), url("lora-latin-400-normal.d3dbca98.woff") format("woff");
+  unicode-range: U+??, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 :root, [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -21913,6 +21958,10 @@ textarea.form-control-lg {
   --bs-bg-opacity: .9;
 }
 
+body {
+  font-family: Lora;
+}
+
 .hero-background {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -21949,6 +21998,11 @@ textarea.form-control-lg {
   font-size: 2rem;
 }
 
+.time {
+  color: #6e6e6e;
+  font-size: .65em;
+}
+
 #btn-back-to-top {
   z-index: 9999;
   display: none;
@@ -21981,8 +22035,8 @@ textarea.form-control-lg {
   color: #fff;
 }
 
-.margin-top {
-  margin-top: 50px;
+.margin-top, .margin-bottom {
+  margin-top: 75px;
 }
 
 #leaflet-map {
@@ -22043,7 +22097,7 @@ textarea.form-control-lg {
   transform: translateY(-50%);
 }
 
-.rsvp .rsvp-form .form-input-group i.fa-user, .rsvp .rsvp-form .form-input-group i.fa-users, .rsvp .rsvp-form .form-input-group i.fa-envelope, .rsvp .rsvp-form .form-input-group .fa-key, .rsvp .rsvp-form .form-select-group .fa-hotel, .rsvp .rsvp-form .form-input-group .fa-comment {
+.rsvp .rsvp-form .form-input-group i.fa-user, .rsvp .rsvp-form .form-input-group i.fa-users, .rsvp .rsvp-form .form-input-group i.fa-envelope, .rsvp .rsvp-form .form-input-group .fa-key, .rsvp .rsvp-form .form-input-group .fa-hotel, .rsvp .rsvp-form .form-input-group .fa-comment {
   margin-left: 20px;
   font-size: 14px;
   position: absolute;
