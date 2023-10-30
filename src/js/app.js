@@ -76,7 +76,7 @@ function backToTop() {
     L.marker([47.725636792867306, 18.37800653068907], {
       icon: fontAwesomeIcon
     }).addTo(map)
-    .bindPopup(' <h5>Hilltop Borbirtok & Étterem</h5><p>Neszmély, Melegeshegy, 2544 Magyarország</p><p><a href="https://www.google.com/maps/dir//Neszm%C3%A9ly,+Hilltop+Borbirtok+%26+%C3%89tterem,+Melegeshegy,+2544+Magyarorsz%C3%A1g/@47.7252312,18.3594667,15z/data=!4m21!1m11!3m10!1s0x476a5aa0c613c585:0x56f927e22b444349!2sHilltop+Borbirtok+%26+%C3%89tterem!5m3!1s2023-09-24!4m1!1i2!8m2!3d47.7252182!4d18.3779207!16s%2Fg%2F1tnl05yt!4m8!1m0!1m5!1m1!1s0x476a5aa0c613c585:0x56f927e22b444349!2m2!1d18.3779208!2d47.7252182!3e3?entry=ttu" target="_blank">Útvonal</a></p>')
+    .bindPopup(' <h5>Hilltop Borbirtok & Étterem</h5><p>Neszmély, Melegeshegy, 2544 Magyarország</p><p><a href="https://www.google.com/maps/dir//Neszm%C3%A9ly,+Hilltop+Borbirtok+%26+%C3%89tterem,+Melegeshegy,+2544+Magyarorsz%C3%A1g/@47.7252312,18.3594667,15z/data=!4m21!1m11!3m10!1s0x476a5aa0c613c585:0x56f927e22b444349!2sHilltop+Borbirtok+%26+%C3%89tterem!5m3!1s2023-09-24!4m1!1i2!8m2!3d47.7252182!4d18.3779207!16s%2Fg%2F1tnl05yt!4m8!1m0!1m5!1m1!1s0x476a5aa0c613c585:0x56f927e22b444349!2m2!1d18.3779208!2d47.7252182!3e3?entry=ttu" target="_blank">Directions</a></p>')
     .openPopup();
 
      /********************** RSVP *********************/
@@ -110,7 +110,7 @@ function backToTop() {
 
     // alert_markup
     function alert_markup(alert_type, msg) {
-      return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
+      return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + ' <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>';
     }
     // MD5 Encoding
     var MD5 = function (string) {

@@ -7,6 +7,8 @@
   <title>B&G</title>
   <!-- Style -->
   <link rel="stylesheet" href="./css/style.scss">
+  <!-- JavaScript -->
+  <script type="module" src="./js/app.js"></script>
 </head>
 
 <body>
@@ -27,7 +29,8 @@
                 <li class="nav-item"></li><a class="nav-link" href="#map">Venue</a></li>
               </ul>
               <div class="d-flex">
-                <a class="btn btn-outline-secondary me-2" href="#" role="button"><i class="fa-solid fa-language"> </i> HUN</a>
+                <a class="btn btn-outline-secondary me-2" href="#" role="button">HU</a>
+                <a class="btn btn-outline-secondary active me-2" href="#" role="button">EN</a>
                 <a class="btn btn-outline-warning" href="#rsvp" role="button">RSVP</a>
               </div>
             
@@ -139,6 +142,7 @@
         <div class="row">
           <div class="col-md-12 text-center">
             <h3 class="header">Venue</h3>
+            <p>Set 72 miles from Budapest Ferenc Liszt International Airport, Hilltop Borbirtok & étterem, Neszmély</p>
           </div>
         </div>
       </div>
@@ -151,7 +155,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </button>
               <div class="section-padding">
                 <h3>Thank you!</h3>
@@ -172,26 +176,26 @@
               <div class="row">
                 <div class="col-md-6 col-sm-6">
                   <div class="form-input-group">
-                    <i class="fa fa-envelope"></i><input type="email" name="email" class="" placeholder="Your email"
+                    <i class="fa-regular fa-envelope"></i><input type="email" name="email" class="" placeholder="Your email"
                       required>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                   <div class="form-input-group">
-                    <i class="fa fa-user"></i><input name="name" class="" placeholder="Your name" required>
+                    <i class="fa-regular fa-user"></i><input name="name" class="" placeholder="Your name" required>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 col-sm-6">
                   <div class="form-input-group">
-                    <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0" max="4"
+                    <i class="fa-solid fa-users"></i><input type="number" name="extras" class="" min="0" max="4"
                       placeholder="Husband/Wife or kids" required>
                   </div>
                 </div>
                 <div class="col-md-6 col-sm-6">
                   <div class="form-input-group">
-                    <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0"
+                    <i class="fa-solid fa-key"></i><input type="number" name="invite_code" id="invite_code" class="" min="0"
                       placeholder="Invite code" required>
                   </div>
                 </div>
@@ -237,11 +241,9 @@
       </div>
       <!-- Copyright -->
     </footer>
-    <!-- JavaScript -->
-    <script type="module" src="./js/app.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script type="module" src="../node_modules/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js"></script>
-
 </body>
 
 </html>
