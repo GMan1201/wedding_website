@@ -190,3 +190,10 @@ body {
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder {
   color: #bcc1c3;
 }
+@media only screen and (max-width: 600px) {
+  body {
+      .countdown li {
+          padding: 0.5rem;
+      }
+  }
+}
