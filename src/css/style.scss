@@ -10,7 +10,6 @@ $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 /*https://www.npmjs.com/package/@fontsource/lora*/
 @import "../../node_modules/@fontsource/lora/index.css"; // Defaults to weight 400
 @import "../../node_modules/@fontsource/parisienne/index.css"; // Defaults to weight 400
-@import "../../node_modules/add-to-calendar-buttons/main.css";
 
 html {
   scroll-padding-top: 4rem;
@@ -330,6 +329,7 @@ h2.header {
   border-radius: 50%;
 }
 
+/*
 #timeline .timeline-item .timeline-icon svg,
 #timeline .timeline-item .timeline-icon .fa {
   position: relative;
@@ -338,7 +338,16 @@ h2.header {
   font-size: 24px;
   color: #fff;
 }
-
+*/
+#timeline .timeline-item .timeline-icon svg,
+#timeline .timeline-item .timeline-icon .fa-solid,
+#timeline .timeline-item .timeline-icon .fa-regular {
+  position: relative;
+  top: 12px;
+  left: 12px;
+  font-size: 24px;
+  color: #fff!important;
+}
 #timeline .timeline-item .timeline-content {
   width: 45%;
   background: #fff;

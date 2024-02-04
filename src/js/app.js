@@ -3,8 +3,7 @@ import '@fortawesome/fontawesome-free';
 import 'jquery.mb.ytplayer';
 import 'jquery';
 import 'leaflet';
-import '../../node_modules/add-to-calendar-buttons/ouical.js';
-import '../../node_modules/add-to-calendar-buttons/ouical.min.js';
+import 'add-to-calendar-button';
 
 //Get the button
 let mybutton = document.getElementById("btn-back-to-top");
@@ -89,18 +88,22 @@ $('#rsvp-form').on('submit', function (e) {
     var data = $(this).serialize();
 
     $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+    $('#alert-wrapper-hun').html(alert_markup('info', '<strong>Egy pillanat!</strong> Adatok mentése folyamatban.'));
 
     if (MD5($('#invite_code').val()) !== 'b2fe913682d4730ed54f25b699ded7ca'
         && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
         $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+        $('#alert-wrapper-hun').html(alert_markup('danger', '<strong>Hoppá!</strong> A meghívó kódja helytelen.'));
     } else {
         $.post('https://script.google.com/macros/s/AKfycbxQPkUha430BP4cjGmkIOhgbVAlRAeRS3WVdvEz_ATRB_p3F-dB8CgV1T74fXZXWn4y/exec', data)
             .done(function (data) {
                 console.log(data);
                 if (data.result === "error") {
                     $('#alert-wrapper').html(alert_markup('danger', data.message));
+                    $('#alert-wrapper-hun').html(alert_markup('danger', data.message));
                 } else {
                     $('#alert-wrapper').html('');
+                    $('#alert-wrapper-hun').html('');
                     $('#rsvp-modal').modal('show');
                     $('#rsvp-form')[0].reset();
                 }
@@ -108,6 +111,7 @@ $('#rsvp-form').on('submit', function (e) {
             .fail(function (data) {
                 console.log(data);
                 $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> There is some issue with the server. '));
+                $('#alert-wrapper-hun').html(alert_markup('danger', '<strong>Hoppá!</strong> Valami probléma van a szerverrel! '));
             });
     }
 });
@@ -364,34 +368,3 @@ $(function () {
         });
     }
 });
-
-/********************** Add to Calendar **********************/
-var myCalendar = createCalendar({
-    options: {
-        class: '',
-        // You can pass an ID. If you don't, one will be generated for you
-        id: ''
-    },
-    data: {
-        // Event title
-        title: "B&G Wedding",
-
-        // Event start date
-        start: new Date('Aug 16, 2024 15:00'),
-
-        // Event duration (IN MINUTES)
-        // duration: 120,
-
-        // You can also choose to set an end time
-        // If an end time is set, this will take precedence over duration
-        end: new Date('Aug 17, 2024 03:00'),
-
-        // Event Address
-        address: 'Hilltop Borbirtok & Étterem, Neszmély',
-
-        // Event Description
-        description: "We can't wait to see you on our big day. For any queries or issues, please contact either of us."
-    }
-});
-
-$('#add-to-cal').html(myCalendar);

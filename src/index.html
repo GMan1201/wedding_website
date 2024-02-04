@@ -3,8 +3,14 @@
 
 <head>
   <meta charset="UTF-8">
+  <title>B&G wedding</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B&G</title>
+  <meta name="description" content="We would like to invite you to our big day.">
+  <meta property="og:title" content="B&G wedding">
+  <meta property="og:description" content="We would like to invite you to our big day.">
+  <meta property="og:image" content="./img/bng_header_2.jpg">
+  <meta property="og:type" content="website">
+
   <!-- Style -->
   <link rel="stylesheet" href="./css/style.scss">
   <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
@@ -91,9 +97,9 @@
           <p>We look forward to creating beautiful memories together and celebrating the beginning of our new chapter
             surrounded by friends and family.</p>
           <div class="float-start margin-top">
-          <p>With love and anticipation,</p>
-          <p class="fs-4 alter-font">Beáta and Gergely</p>
-        </div>
+            <p>With love and anticipation,</p>
+            <p class="fs-4 alter-font">Beáta and Gergely</p>
+          </div>
         </div>
       </div>
     </div>
@@ -110,7 +116,7 @@
 
         <div class="timeline-item">
           <div class="timeline-icon">
-            <i class="fa fa-solid fa-champagne-glasses" aria-hidden="true"></i>
+            <i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>
           </div>
           <div class="timeline-content">
             <h2>Guest arrival <span class="time-stamp float-end">15:00</span></h2>
@@ -122,24 +128,24 @@
 
         <div class="timeline-item">
           <div class="timeline-icon">
-            <i class="fa fa-solid fa-heart" aria-hidden="true"></i>
+            <i class="fa-solid fa-heart" aria-hidden="true"></i>
           </div>
           <div class="timeline-content right">
             <h2>Ceremony <span class="time-stamp float-end">16:00</span></h2>
             <p>
-             
+              Coming soon.
             </p>
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-icon success">
-            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa-solid fa-star" aria-hidden="true"></i>
           </div>
           <div class="timeline-content">
             <h2>TBA <span class="time-stamp float-end">17:00</span></h2>
             <p>
-             Coming soon.
+              Coming soon.
             </p>
 
           </div>
@@ -230,9 +236,12 @@
 
   <section id="quote" class="margin-top">
     <div class="container text-center">
-       <!-- BLOCKQUOTE -->
-       <blockquote><p class="fs-4">We come to love not by finding a perfect person, but by learning to see an imperfect person perfectly.</p></blockquote>
-       <cite>Up</cite>
+      <!-- BLOCKQUOTE -->
+      <blockquote>
+        <p class="fs-4 fst-italic">We come to love not by finding a perfect person, but by learning to see an imperfect
+          person perfectly.</p>
+      </blockquote>
+      <cite>Up</cite>
     </div>
   </section>
 
@@ -248,7 +257,7 @@
     <div id="leaflet-map">
     </div>
   </section>
-  
+
   <section class="rsvp margin-top  margin-top" id="rsvp">
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -259,7 +268,13 @@
             <div class="section-padding">
               <h3>Thank you!</h3>
               <p>We are glad to see you join us on our big day.</p>
-              <div id="add-to-cal"></div>
+              <div id="add-to-cal">
+                <add-to-calendar-button name="B&G Wedding"
+                  description="We can't wait to see you on our big day. For any queries or issues, please contact either of us. " startDate="2024-08-16" endDate="2024-08-17"
+                  startTime="15:00" endTime="03:00" location="Hilltop Borhotel, Neszmély"
+                  options="['Apple','Google','iCal']" timeZone="Europe/Budapest"
+                  trigger="click" inline listStyle="modal" iCalFileName="B&G-Wedding" />
+              </div>
             </div>
           </div>
         </div><!-- /.modal-content -->
@@ -270,7 +285,7 @@
       <div class="row">
         <div class="col-md-6 offset-md-3">
           <h3 class="alter-font text-center margin-bottom">What are you waiting for?</h3>
-          <p>We would greatly appreciate if you could RSVP before 1st of May 2024</p>
+          <p>We would greatly appreciate if you could RSVP before end of May 2024</p>
           <form id="rsvp-form" class="rsvp-form" action="" method="POST">
             <div class="row">
               <div class="col-md-6 col-sm-6">
@@ -330,7 +345,7 @@
       </div>
     </div>
   </section>
-  
+
   <section id="video-bg" class="hidden-sm hidden-xs margin-bottom">
     <div id="bgndVideo" class="player"
       data-property="{videoURL:'https://www.youtube.com/watch?v=YffxXfO8vDE',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:40, stopAt:240, opacity:1}">
@@ -343,10 +358,11 @@
   <footer class="bg-dark text-center text-white">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-     
+
       <figure class="text-center">
         <blockquote class="blockquote">
-          <p class="fs-6"><small>Love is like taking a dump. Sometimes it works itself out. But sometimes, you need to give it a nice hard slimy push.</small></p>
+          <p class="fs-6 fst-italic"><small>Love is like taking a dump. Sometimes it works itself out. But sometimes,
+              you need to give it a nice hard slimy push.</small></p>
         </blockquote>
         <figcaption class="blockquote-footer">
           <small>Eric Cartman <cite title="Source Title">South Park</cite></small>
@@ -355,9 +371,9 @@
       <a class="text-white" href="https://duplagportfolio.000webhostapp.com/">2G</a>
     </div>
     <!-- Copyright -->
-    
+
   </footer>
-  
+
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script type="module" src="./js/app.js"></script>
 </body>
