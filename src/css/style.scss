@@ -205,7 +205,7 @@ h2.header {
 .rsvp .rsvp-form .form-input-group .fa-hotel,
 .rsvp .rsvp-form .form-input-group .fa-comment,
 .rsvp .rsvp-form .form-input-group .fa-wheat-awn,
-.rsvp .rsvp-form .form-input-group .fa-pencil   {
+.rsvp .rsvp-form .form-input-group .fa-pencil {
   font-size: 14px;
   position: absolute;
   top: 50%;
@@ -241,33 +241,33 @@ h2.header {
 
 
 #quote blockquote {
-	position: relative;
+  position: relative;
 }
 
 #quote blockquote:before,
 #quote blockquote:after {
-	position: absolute;
-	color: #000000;
-	font-size: 4rem;
-	width: 2rem;
-	height: 2rem;
+  position: absolute;
+  color: #000000;
+  font-size: 4rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 #quote blockquote:before {
-	content: '“';
-	left: -1rem;
-	top: -3rem;
+  content: '“';
+  left: -1rem;
+  top: -3rem;
 }
 
 #quote blockquote:after {
-	content: '”';
-	right: 0rem;
-	bottom: 0rem;
+  content: '”';
+  right: 0rem;
+  bottom: 0rem;
 }
 
 #quote cite {
-	line-height: 3;
-	text-align: left;
+  line-height: 3;
+  text-align: left;
 }
 
 .timeline-container {
@@ -329,6 +329,13 @@ h2.header {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-hidden {
+  box-shadow: none !important;
 }
 
 /*
@@ -344,12 +351,10 @@ h2.header {
 #timeline .timeline-item .timeline-icon svg,
 #timeline .timeline-item .timeline-icon .fa-solid,
 #timeline .timeline-item .timeline-icon .fa-regular {
-  position: relative;
-  top: 12px;
-  left: 12px;
   font-size: 24px;
-  color: #fff!important;
+  color: #fff !important;
 }
+
 #timeline .timeline-item .timeline-content {
   width: 45%;
   background: #fff;
@@ -396,6 +401,7 @@ h2.header {
   border-top: 7px solid transparent;
   border-bottom: 7px solid transparent;
   border-left: 7px solid #212529;
+
 }
 
 #timeline .timeline-item .timeline-content.right {
@@ -679,3 +685,38 @@ h2.header {
   }
 }
 
+.accordion-item {
+  background-color: #212529;
+  color: #fff;
+  border: 1px solid #fff;
+  /* Border color for better contrast */
+  border-radius: 5px;
+  /* Optional: Add rounded corners */
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  background-color: #212529;
+  color: #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  /* Remove the focus box-shadow for better aesthetics */
+}
+
+.accordion-body {
+  background-color: #fff;
+  color: #212529;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  background-color: #212529;
+
+}
+
+.accordion {
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
