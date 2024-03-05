@@ -138,7 +138,7 @@
             <i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>
           </div>
           <div class="timeline-content content-hidden">
-            <h2>Congratulations & Photos <span class="time-stamp float-end">17:30</span></h2>
+            <h2>Congrats & Photos <span class="time-stamp float-end">17:30</span></h2>
           </div>
         </div>
         <div class="timeline-item">
@@ -215,7 +215,7 @@
 
 
 
-  <section class="rsvp margin-top  margin-top" id="rsvp">
+  <section class="rsvp margin-top" id="rsvp">
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -242,7 +242,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6 offset-md-3">
+        <div class="col-md-10 offset-md-1">
           <h3 class="alter-font text-center margin-bottom">What are you waiting for?</h3>
           <p>We would greatly appreciate if you could RSVP before end of May 2024</p>
           <form id="rsvp-form" class="rsvp-form" action="" method="POST">
@@ -284,11 +284,11 @@
               <div class="col-md-6 col-sm-6">
                 <div class="form-input-group">
                   <i class="fa-solid fa-hotel"></i>
-                  <input type="search" name="hotel" id="hotel" list="hotel" placeholder="Accomodation required?">
-                  <datalist id="hotel">
-                    <option value="No">
-                    <option value="Yes">
-                  </datalist>
+                  <select name="hotel" id="hotel" required>
+                    <option value="" selected disabled>Accomodation required?</option>
+                    <option value="No">No</option>
+                    <option value="Yes">Yes</option>
+                  </select>
                   <!--input type="number" name="hotel" class="" placeholder="Hotel" required-->
                 </div>
               </div>
@@ -320,56 +320,59 @@
     </div>
   </section>
 
-  <section id="traditions" class="margin-top margin-bottom">
-    <div class="col-md-6 offset-md-3">
-      <h3 class="alter-font text-center margin-bottom">Hungarian wedding traditions</h3>
-      <div class="accordion accordion-flush" id="accordionWedding">
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-              aria-expanded="true" aria-controls="flush-collapseOne">
-              Midnight Breakfast
-            </button>
-          </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionWedding">
-            <div class="accordion-body">Unlike standard weddings, Hungarian weddings are an all night affair with
-              lots of dancing and music. To give you that extra energy to keep going into the night, there is
-              traditionally a “midnight breakfast” served in the wee hours. This is usually stuffed cabbage or other
-              typical Hungarian comfort cuisine.</div>
+  <section id="traditions" class="margin-bottom">
+    <div class="container">
+      <div class="col-md-10 offset-md-1">
+        <h3 class="alter-font text-center margin-bottom">Hungarian wedding traditions</h3>
+        <div class="accordion accordion-flush" id="accordionWedding">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="true" aria-controls="flush-collapseOne">
+                Midnight Breakfast
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionWedding">
+              <div class="accordion-body">Unlike standard weddings, Hungarian weddings are an all night affair with
+                lots of dancing and music. To give you that extra energy to keep going into the night, there is
+                traditionally a “midnight breakfast” served in the wee hours. This is usually stuffed cabbage or other
+                typical Hungarian comfort cuisine.</div>
+            </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-              The Red Dress
-            </button>
-          </h2>
-          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-            data-bs-parent="#accordionWedding">
-            <div class="accordion-body">
-              After midnight, typically the bride is away for a quick breather and wardrobe change. The white dress
-              is switched out into a traditional folk outfit known as “the red dress”. The bride comes back dressed
-              in red as the “new woman”.</div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                The Red Dress
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionWedding">
+              <div class="accordion-body">
+                After midnight, typically the bride is away for a quick breather and wardrobe change. The white dress
+                is switched out into a traditional folk outfit known as “the red dress”. The bride comes back dressed
+                in red as the “new woman”.</div>
+            </div>
           </div>
-        </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              The Bridal Dance
-            </button>
-          </h2>
-          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-            data-bs-parent="#accordionWedding">
-            <div class="accordion-body">Also known as the “money dance”, the bridal dance involves all guests and
-              the bride. Traditionally, the father, best man or a master of ceremony would announce that the “bride
-              is for sale” while Hungarian wedding music plays in the background. He would hold a bucket or a hat to
-              collect money from all the guests to “pay” for the privilege of dancing with the bride (usually only
-              for a few seconds of spinning her around).
-              Traditionally, this was a way of providing the couple money for their honeymoon and the couple’s new life,
-              but nowadays, it is more symbolic but always a highlight of any Hungarian wedding.
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                The Bridal Dance
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionWedding">
+              <div class="accordion-body">Also known as the “money dance”, the bridal dance involves all guests and
+                the bride. Traditionally, the father, best man or a master of ceremony would announce that the “bride
+                is for sale” while Hungarian wedding music plays in the background. He would hold a bucket or a hat to
+                collect money from all the guests to “pay” for the privilege of dancing with the bride (usually only
+                for a few seconds of spinning her around).
+                Traditionally, this was a way of providing the couple money for their honeymoon and the couple’s new
+                life,
+                but nowadays, it is more symbolic but always a highlight of any Hungarian wedding.
+              </div>
             </div>
           </div>
         </div>

@@ -124,7 +124,7 @@
             <i class="fa-solid fa-heart" aria-hidden="true"></i>
           </div>
           <div class="timeline-content right content-hidden">
-            <h2>Ceremónia <span class="time-stamp float-end">17:00</span></h2>
+            <h2>Ceremónia<span class="time-stamp float-end">17:00</span></h2>
           </div>
         </div>
 
@@ -133,7 +133,7 @@
             <i class="fa-solid fa-champagne-glasses" aria-hidden="true"></i>
           </div>
           <div class="timeline-content content-hidden">
-            <h2>Gratuláció és fotózás <span class="time-stamp float-end">17:30</span></h2>
+            <h2>Gratuláció & fotózás <span class="time-stamp float-end"> 17:30</span></h2>
           </div>
         </div>
         <div class="timeline-item">
@@ -207,7 +207,7 @@
     </div>
   </section>
 
-  <section class="rsvp margin-top  margin-top" id="rsvp">
+  <section class="rsvp margin-top" id="rsvp">
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -244,7 +244,7 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6 offset-md-3">
+        <div class="col-md-10 offset-md-1">
           <h3 class="alter-font text-center margin-bottom">Ne habozz, jelezz vissza!</h3>
           <p>Kérlek jelezz vissza Május végéig.</p>
           <form id="rsvp-form" class="rsvp-form" action="" method="POST">
@@ -285,11 +285,11 @@
               <div class="col-md-6 col-sm-6">
                 <div class="form-input-group">
                   <i class="fa-solid fa-hotel"></i>
-                  <input type="search" name="hotel" id="hotel" list="hotel" placeholder="Szállás" required>
-                  <datalist id="hotel">
-                    <option value="Nem">
-                    <option value="Igen">
-                  </datalist>
+                  <select name="hotel" id="hotel" required>
+                    <option value="" selected disabled>Szállás szükséges</option>
+                    <option value="No">Nem</option>
+                    <option value="Yes">Igen</option>
+                    </select>
                   <!--input type="number" name="hotel" class="" placeholder="Hotel" required-->
                 </div>
               </div>
