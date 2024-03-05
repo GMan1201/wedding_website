@@ -215,7 +215,8 @@ h2.header {
 
 .rsvp .rsvp-form .form-input-group input,
 .rsvp .rsvp-form .form-input-group select {
-  padding-left: 68px;
+  //padding-left: 68px;
+  text-indent:58px;
   width: 100%;
   height: 100%;
   -moz-border-radius: 6px;
@@ -223,9 +224,17 @@ h2.header {
   border-radius: 6px;
   border: none;
   color: #bcc1c3;
-  /* Set default color to grey */
+  
 }
-
+.rsvp .rsvp-form .form-input-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23bcc1c3'><polygon points='0,0 12,0 6,6'/></svg>") no-repeat;
+  background-size: 12px;
+  background-position: calc(100% - 20px) center;
+  background-repeat: no-repeat;
+}
 .rsvp .rsvp-form .form-input-group input:valid,
 .rsvp .rsvp-form .form-input-group select:valid {
   color: #000;
@@ -276,7 +285,7 @@ h2.header {
 }
 
 #quote cite {
-  line-height: 3;
+  line-height: 2.5;
   text-align: left;
 }
 
@@ -701,7 +710,6 @@ h2.header {
   border: 1px solid #fff;
   /* Border color for better contrast */
   border-radius: 5px;
-  /* Optional: Add rounded corners */
   margin-bottom: 10px;
 }
 
