@@ -1,11 +1,11 @@
-@import "~bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 /*$bootstrap-icons-font-dir: "../../node_modules/bootstrap-icons/font/fonts"; // relative to the current file
 @import "~bootstrap-icons/font/bootstrap-icons";*/
 $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "~@fortawesome/fontawesome-free/scss/regular.scss";
-@import "~@fortawesome/fontawesome-free/scss/solid.scss";
-@import "~@fortawesome/fontawesome-free/scss/v4-shims.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
 @import "../../node_modules/leaflet/dist/leaflet.css";
 /*https://www.npmjs.com/package/@fontsource/lora*/
 @import "../../node_modules/@fontsource/lora/index.css"; // Defaults to weight 400
@@ -32,8 +32,7 @@ h2.header {
 }
 
 .hero-background {
-  /*background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(77, 77, 77, 0.7)), url(../img/bng_header.png) center center;*/
-  background: url(../img/bng_header_2.jpg);
+  background: url(../img/bng_header_2.webp);
   background-position: 15% 55%;
   min-height: 750px;
   -webkit-background-size: cover;
@@ -716,7 +715,6 @@ h2.header {
   // background-color: #212529;
   color: #fff;
   border: 1px solid #fff;
-  /* Border color for better contrast */
   border-radius: 5px;
   margin-bottom: 10px;
 }
@@ -728,7 +726,6 @@ h2.header {
 
 .accordion-button:focus {
   box-shadow: none;
-  /* Remove the focus box-shadow for better aesthetics */
 }
 
 .accordion-body {

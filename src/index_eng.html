@@ -8,11 +8,13 @@
   <meta name="description" content="We would like to invite you to our big day.">
   <meta property="og:title" content="B&G wedding">
   <meta property="og:description" content="We would like to invite you to our big day.">
+  <meta property="og:image" content="./img/bng_header_2.webp">
   <meta property="og:type" content="website">
-
   <!-- Style -->
   <link rel="stylesheet" href="./css/style.scss">
   <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+  <!-- Preload the hero background image -->
+<link rel="preload" as="image" href="./img/bng_header_2.webp">
 </head>
 
 <body>
@@ -392,7 +394,6 @@
   <footer class="bg-dark text-center text-white">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-
       <figure class="text-center">
         <blockquote class="blockquote">
           <p class="fs-6 fst-italic"><small>Love is like taking a dump. Sometimes it works itself out. But sometimes,
@@ -405,11 +406,9 @@
       <a class="text-white" href="https://duplagportfolio.000webhostapp.com/" target="_blank">2G</a>
     </div>
     <!-- Copyright -->
-
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="https://www.youtube.com/iframe_api"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script type="module" src="./js/app.js"></script>
 </body>
-
 </html>

@@ -2,33 +2,30 @@
   "name": "bandgwedding",
   "version": "1.0.0",
   "description": "Wedding website",
-   "main":"index.js",
   "scripts": {
     "dev": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --dist-dir public --public-url ./"
+    "build": "parcel build src/*.html --dist-dir public --public-url ./  --no-content-hash",
+    "minify-css": "cssnano input.css -o output.min.css"
   },
   "keywords": [],
   "author": "2G",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.9.3",
-    "cssnano": "^6.0.2",
-    "events": "^3.3.0",
+    "cssnano": "^6.0.5",
+    "gzip-cli": "^1.2.0",
     "parcel": "^2.10.3",
-    "parcel-namer-rewrite": "^2.10.3-rc.2",
-    "postcss": "^8.4.32",
-    "process": "^0.11.10",
-    "sass": "^1.69.5"
+    "sass": "^1.71.1"
   },
   "dependencies": {
     "@fontsource/lora": "^5.0.8",
     "@fontsource/parisienne": "^5.0.8",
-    "@fortawesome/fontawesome-free": "^6.4.2",
+    "@fortawesome/fontawesome-free": "^6.5.1",
     "@popperjs/core": "^2.11.8",
-    "add-to-calendar-button": "^2.5.9",
-    "bootstrap": "^5.3.2",
+    "add-to-calendar-button": "^2.6.0",
+    "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "jquery.mb.ytplayer": "^3.3.8",
     "leaflet": "^1.9.4"
-}
+  }
 }

@@ -1,7 +1,6 @@
 import 'bootstrap';
 import '@fortawesome/fontawesome-free';
 import 'jquery.mb.ytplayer';
-import 'jquery';
 import 'leaflet';
 import 'add-to-calendar-button';
 
@@ -30,11 +29,8 @@ function backToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
 /********************** Embed youtube video *********************/
-
 $('.player').YTPlayer();
-
 /********************** Countdown *********************/
 const end = new Date("Aug 16, 2024 15:00:00").getTime();
 const dayEl = document.getElementById('days');
@@ -61,10 +57,35 @@ const x = setInterval(function () {
     minutesEl.innerText = Math.floor((difference % hours) / minutes);
     secondsEl.innerText = Math.floor((difference % minutes) / seconds);
 }, seconds);
+/********************** Timeline animation **********************/
+$(function () {
+    var timelineBlocks = $('.timeline-item'),
+        offset = 0.8;
 
+    //hide timeline blocks which are outside the viewport
+    hideBlocks(timelineBlocks, offset);
 
+    //on scolling, show/animate timeline blocks when entering the viewport
+    $(window).on('scroll', function () {
+        (!window.requestAnimationFrame)
+            ? setTimeout(function () { showBlocks(timelineBlocks, offset); }, 100)
+            : window.requestAnimationFrame(function () { showBlocks(timelineBlocks, offset); });
+    });
+
+    function hideBlocks(blocks, offset) {
+        blocks.each(function () {
+            ($(this).offset().top > $(window).scrollTop() + $(window).height() * offset) && $(this).find('.timeline-icon, .timeline-content').addClass('is-hidden');
+        });
+    }
+
+    function showBlocks(blocks, offset) {
+        blocks.each(function () {
+            ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.timeline-icon').hasClass('is-hidden')) && $(this).find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('animate-it');
+
+        });
+    }
+});
 /********************** Maps *********************/
-
 var map = L.map('leaflet-map').setView([47.50727305049044, 19.045640138808253], 8);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -80,9 +101,7 @@ L.marker([47.725636792867306, 18.37800653068907], {
 }).addTo(map)
     .bindPopup(' <h5>Hilltop Borbirtok & Étterem</h5><p>Neszmély, Melegeshegy, 2544 Magyarország</p><p><a href="https://www.google.com/maps/dir//Neszm%C3%A9ly,+Hilltop+Borbirtok+%26+%C3%89tterem,+Melegeshegy,+2544+Magyarorsz%C3%A1g/@47.7252312,18.3594667,15z/data=!4m21!1m11!3m10!1s0x476a5aa0c613c585:0x56f927e22b444349!2sHilltop+Borbirtok+%26+%C3%89tterem!5m3!1s2023-09-24!4m1!1i2!8m2!3d47.7252182!4d18.3779207!16s%2Fg%2F1tnl05yt!4m8!1m0!1m5!1m1!1s0x476a5aa0c613c585:0x56f927e22b444349!2m2!1d18.3779208!2d47.7252182!3e3?entry=ttu" target="_blank">Directions</a></p>')
     .openPopup();
-
 /********************** RSVP *********************/
-
 $('#rsvp-form').on('submit', function (e) {
     e.preventDefault();
     var data = $(this).serialize();
@@ -339,32 +358,4 @@ var MD5 = function (string) {
     return temp.toLowerCase();
 };
 
-/********************** Timeline animation **********************/
 
-$(function () {
-    var timelineBlocks = $('.timeline-item'),
-        offset = 0.8;
-
-    //hide timeline blocks which are outside the viewport
-    hideBlocks(timelineBlocks, offset);
-
-    //on scolling, show/animate timeline blocks when entering the viewport
-    $(window).on('scroll', function () {
-        (!window.requestAnimationFrame)
-            ? setTimeout(function () { showBlocks(timelineBlocks, offset); }, 100)
-            : window.requestAnimationFrame(function () { showBlocks(timelineBlocks, offset); });
-    });
-
-    function hideBlocks(blocks, offset) {
-        blocks.each(function () {
-            ($(this).offset().top > $(window).scrollTop() + $(window).height() * offset) && $(this).find('.timeline-icon, .timeline-content').addClass('is-hidden');
-        });
-    }
-
-    function showBlocks(blocks, offset) {
-        blocks.each(function () {
-            ($(this).offset().top <= $(window).scrollTop() + $(window).height() * offset && $(this).find('.timeline-icon').hasClass('is-hidden')) && $(this).find('.timeline-icon, .timeline-content').removeClass('is-hidden').addClass('animate-it');
-
-        });
-    }
-});
