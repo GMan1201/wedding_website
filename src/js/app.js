@@ -1,6 +1,5 @@
 import 'bootstrap';
 import '@fortawesome/fontawesome-free';
-import 'jquery.mb.ytplayer';
 import 'leaflet';
 import 'add-to-calendar-button';
 
@@ -92,7 +91,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 const fontAwesomeIcon = L.divIcon({
-    html: '<i class="fa-solid fa-location-pin fa-2xl"></i>',
+    html: '<i class="fa-solid fa-location-pin fa-2xl" role="button" aria-label="Location Pin"></i>',
     iconSize: [20, 20],
     className: 'myDivIcon'
 });
@@ -357,5 +356,3 @@ var MD5 = function (string) {
 
     return temp.toLowerCase();
 };
-
-

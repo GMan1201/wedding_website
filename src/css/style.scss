@@ -18,21 +18,16 @@ html {
 :root {
   --bs-bg-opacity: 0.9;
 }
-
 body {
   font-family: "Lora";
 }
 
-h2.header {
-  font-family: "Parisienne";
-}
-
-.alter-font {
+h2.header, .alter-font{
   font-family: "Parisienne";
 }
 
 .hero-background {
-  background: url(../img/bng_header_2.webp);
+  background: url(../img/bng_header_2_large.webp);
   background-position: 15% 55%;
   min-height: 750px;
   -webkit-background-size: cover;
@@ -41,10 +36,33 @@ h2.header {
   background-size: cover;
   position: relative;
 }
-
+@media only screen and (min-width:769px) and (max-width: 1024px) {
+  .hero-background {
+    background: url(../img/bng_header_2_medium.webp);
+    background-position: 15% 55%;
+    min-height: 750px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-background {
+    background: url(../img/bng_header_2_small.webp);
+    background-position: 15% 55%;
+    min-height: 750px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+  }
+}
 .header-text-bg {
-  background: rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 1rem;
   display: inline-block;
@@ -66,7 +84,7 @@ h2.header {
 }
 
 .countdown li {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
   padding: 1rem;
   display: flex;
@@ -74,7 +92,7 @@ h2.header {
   margin: 0 0.5rem;
   color: #ffffff;
   /*color: #ffc107;*/
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.7);
 }
 
 .countdown span {
@@ -222,7 +240,7 @@ h2.header {
   -webkit-border-radius: 6px;
   border-radius: 6px;
   border: none;
-  color: #bcc1c3;
+  color: #595959;
 
 }
 
@@ -237,7 +255,7 @@ h2.header {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23bcc1c3'><polygon points='0,0 12,0 6,6'/></svg>") no-repeat;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%595959'><polygon points='0,0 12,0 6,6'/></svg>") no-repeat;
   background-size: 12px;
   background-position: calc(100% - 20px) center;
   background-repeat: no-repeat;
@@ -249,19 +267,19 @@ h2.header {
 }
 
 .rsvp .rsvp-form .form-input-group input::-webkit-input-placeholder {
-  color: #bcc1c3;
+  color: #595959;
 }
 
 .rsvp .rsvp-form .form-input-group input:-moz-placeholder {
-  color: #bcc1c3;
+  color: #595959;
 }
 
 .rsvp .rsvp-form .form-input-group input::-moz-placeholder {
-  color: #bcc1c3;
+  color: #595959;
 }
 
 .rsvp .rsvp-form .form-input-group input:-ms-input-placeholder {
-  color: #bcc1c3;
+  color: #595959;
 }
 
 
