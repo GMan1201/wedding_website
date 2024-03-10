@@ -27,7 +27,7 @@ h2.header, .alter-font{
 }
 
 .hero-background {
-  background: url(../img/bng_header_2_large.webp);
+  background: url(../img/bng_header_large.webp);
   background-position: 15% 55%;
   min-height: 750px;
   -webkit-background-size: cover;
@@ -38,7 +38,7 @@ h2.header, .alter-font{
 }
 @media only screen and (min-width:769px) and (max-width: 1024px) {
   .hero-background {
-    background: url(../img/bng_header_2_medium.webp);
+    background: url(../img/bng_header_medium.webp);
     background-position: 15% 55%;
     min-height: 750px;
     -webkit-background-size: cover;
@@ -50,7 +50,7 @@ h2.header, .alter-font{
 }
 @media only screen and (max-width: 768px) {
   .hero-background {
-    background: url(../img/bng_header_2_small.webp);
+    background: url(../img/bng_header_small.webp);
     background-position: 15% 55%;
     min-height: 750px;
     -webkit-background-size: cover;
@@ -312,6 +312,10 @@ h2.header, .alter-font{
 #quote cite {
   line-height: 2.5;
   text-align: left;
+}
+
+.blockquote-footer {
+  color:#8F969E;
 }
 
 .timeline-container {

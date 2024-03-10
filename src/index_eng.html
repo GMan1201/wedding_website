@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -8,14 +8,14 @@
   <meta name="description" content="We would like to invite you to our big day.">
   <meta property="og:title" content="B&G wedding">
   <meta property="og:description" content="We would like to invite you to our big day.">
-  <meta property="og:image" content="./img/bng_header_2_large.webp">
+  <meta property="og:image" content="./img/bng_header_large.webp">
   <meta property="og:type" content="website">
   <!-- Style -->
   <link rel="stylesheet" href="./css/style.scss">
   <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
-  <link rel="preload" as="image" href="./img/bng_header_2_small.webp" media="(max-width: 768px)">
-  <link rel="preload" as="image" href="./img/bng_header_2_medium.webp" media="(min-width: 769px) and (max-width: 1024px)">
-  <link rel="preload" as="image" href="./img/bng_header_2_large.webp" media="(min-width: 1025px)">
+  <link rel="preload" as="image" href="./img/bng_header_small.webp" media="(max-width: 768px)">
+  <link rel="preload" as="image" href="./img/bng_header_medium.webp" media="(min-width: 769px) and (max-width: 1024px)">
+  <link rel="preload" as="image" href="./img/bng_header_large.webp" media="(min-width: 1025px)">
 </head>
 
 <body>
@@ -33,7 +33,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item"><a class="nav-link" aria-current="page" href="#invitation">Invitation</a></li>
               <li class="nav-item"><a class="nav-link" aria-current="page" href="#program">Program</a></li>
-              <li class="nav-item"></li><a class="nav-link" href="#map">Venue</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" href="#map">Venue</a></li>
               <li class="nav-item"><a class="nav-link" aria-current="page" href="#traditions">Wedding traditions</a>
               </li>
             </ul>
@@ -77,7 +77,7 @@
     <!-- Background image -->
   </header>
   <!-- Back to top button -->
-  <button type="button" class="btn btn-lg btn-floating btn btn-outline-secondary" id="btn-back-to-top">
+  <button type="button" aria-label="Scroll to top" class="btn btn-lg btn-floating btn btn-outline-secondary" id="btn-back-to-top" tabinex="0">
     <i class="fa-solid fa-arrow-up fa-bounce"></i>
   </button>
   <section id="invitation" class="margin-top">
@@ -185,7 +185,7 @@
             <i class="fa-solid fa-compact-disc" aria-hidden="true"></i>
           </div>
           <div class="timeline-content content-hidden right">
-            <h2>Party <span class="time-stamp float-end">00:30</span></h2>
+            <h2>Party <span class="time-stamp float-end">02:00</span></h2>
           </div>
         </div>
       </div>
@@ -287,7 +287,7 @@
               <div class="col-md-6 col-sm-6">
                 <div class="form-input-group">
                   <i class="fa-solid fa-hotel"></i>
-                  <select name="hotel" id="hotel" required>
+                  <select name="hotel" id="hotel" aria-label="Accomodation required" required>
                     <option value="" selected disabled>Accomodation required</option>
                     <option value="No">No</option>
                     <option value="Yes">Yes</option>

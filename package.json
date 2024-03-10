@@ -4,7 +4,7 @@
   "description": "Wedding website",
   "scripts": {
     "dev": "parcel ./src/index.html",
-    "build": "parcel build src/*.html --dist-dir public --public-url ./  --no-content-hash",
+    "build": "parcel build src/*.html --dist-dir public --public-url ./ --no-content-hash",
     "minify-css": "cssnano input.css -o output.min.css"
   },
   "keywords": [],
