@@ -138,6 +138,20 @@ $('#rsvp-form').on('submit', function (e) {
 function alert_markup(alert_type, msg) {
     return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + ' <button type="button" class="btn-close float-end" data-bs-dismiss="alert" aria-label="Close"></button>';
 }
+
+/********************** RSVP extra  *********************/
+$(function() {
+  $('#submit').on('click', function(event) {
+    var extrasValue = $('#extras').val();
+    var extraNamesInput = $('#extra_names');
+    if (extrasValue > 0) {
+      extraNamesInput.prop('required', true);
+    } else {
+      extraNamesInput.removeAttr('required');
+    }
+  });
+});
+
 // MD5 Encoding
 var MD5 = function (string) {
 
